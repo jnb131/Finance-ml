@@ -54,9 +54,10 @@ When comparing error precision & recall for 3 models , the Isolation Forest perf
 
 Using Recurrent Neural network we are trying to predict the stock of the next month using training data of from 1/1/2012 to 1/1/2020 with adjusted closing price insted of closing price to get the accurate picture of long term relation of stock price with time
 We are 3 layers of RNN neural network(LTSM architecture) with 1024 cells per layers with dropout so that we dont overfit on training data
+We use LTSM to capture long term dependencies which are not feasible using simple RNN cells
 
 ![image](https://user-images.githubusercontent.com/56895070/121236747-e749b280-c8b3-11eb-88ea-6cef3d2ef5c9.png)
-We use LTSM to capture long term dependencies which are not feasible using simple RNN cells
+
 
 we are also usnig a dense layer to output the value using sigmod function
 and we used 'adam' optimizer along with mean squre error
