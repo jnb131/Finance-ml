@@ -50,7 +50,7 @@ When comparing error precision & recall for 3 models , the Isolation Forest perf
 4) We can also improve on this accuracy by increasing the sample size or use deep learning algorithms however at the cost of computational expense.We can also use complex anomaly detection models to get better accuracy in determining more fraudulent cases
 
 
-### 2) Stock Market Prediction
+### Stock Market Prediction
 
 
 
