@@ -3,7 +3,7 @@
 
 Datasets taken from https://www.kaggle.com/mlg-ulb/creditcardfraud
 
-## Credit Card Fraud Detection
+# Credit Card Fraud Detection
 Content
 The datasets contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 
 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
@@ -15,10 +15,10 @@ transaction Amount, this feature can be used for example-dependant cost-senstive
 otherwise.
 
 
-# Model Prediction
+## Model Prediction
 Now it is time to start building the model .The types of algorithms we are going to use to try to do anomaly detection on this dataset are as follows
 
-### 1) Isolation Forest Algorithm :
+## 1) Isolation Forest Algorithm :
 One of the newest techniques to detect anomalies is called Isolation Forests. The algorithm is based on the fact that anomalies are data points that are few and different. As a result of these properties, anomalies are susceptible to a mechanism called isolation.
 
 This method is highly useful and is fundamentally different from all existing methods. It introduces the use of isolation as a more effective and efficient means to detect 
@@ -35,7 +35,7 @@ conditions required to separate a given observation.
 The way that the algorithm constructs the separation is by first creating isolation trees, or random decision trees. Then, the score is calculated as the path length to 
 isolate the observation.
 
-## Local Outlier Factor(LOF) Algorithm
+## 2)Local Outlier Factor(LOF) Algorithm
 The LOF algorithm is an unsupervised outlier detection method which computes the local density deviation of a given data point with respect to its neighbors. It considers as 
 outlier samples that have a substantially lower density than their neighbors.
 
@@ -50,7 +50,7 @@ When comparing error precision & recall for 3 models , the Isolation Forest perf
 4) We can also improve on this accuracy by increasing the sample size or use deep learning algorithms however at the cost of computational expense.We can also use complex anomaly detection models to get better accuracy in determining more fraudulent cases
 
 
-### Stock Market Prediction
+# Stock Market Prediction
 
 
 
