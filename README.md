@@ -3,6 +3,22 @@
 
 Datasets taken from https://www.kaggle.com/mlg-ulb/creditcardfraud
 
+
+# Stock Market Prediction
+
+Using Recurrent Neural network we are trying to predict the stock of the next month using training data of from 1/1/2012 to 1/1/2020 with adjusted closing price insted of closing price to get the accurate picture of long term relation of stock price with time
+We are 3 layers of RNN neural network(LTSM architecture) with 1024 cells per layers with dropout so that we dont overfit on training data
+We use LTSM to capture long term dependencies which are not feasible using simple RNN cells
+
+![image](https://user-images.githubusercontent.com/56895070/121236747-e749b280-c8b3-11eb-88ea-6cef3d2ef5c9.png)
+
+
+we are also usnig a dense layer to output the value using sigmod function
+and we used 'adam' optimizer along with mean squre error
+
+![image](https://user-images.githubusercontent.com/56895070/121237228-71921680-c8b4-11eb-974a-f8844d2ce6ab.png)
+
+
 # Credit Card Fraud Detection
 Content
 The datasets contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 
@@ -48,20 +64,5 @@ Observations :
 When comparing error precision & recall for 3 models , the Isolation Forest performed much better than the LOF as we can see that the detection of fraud cases is around 27 % versus LOF detection rate of just 2 % and SVM of 0%.
 3) So overall Isolation Forest Method performed much better in determining the fraud cases which is around 30%.
 4) We can also improve on this accuracy by increasing the sample size or use deep learning algorithms however at the cost of computational expense.We can also use complex anomaly detection models to get better accuracy in determining more fraudulent cases
-
-
-# Stock Market Prediction
-
-Using Recurrent Neural network we are trying to predict the stock of the next month using training data of from 1/1/2012 to 1/1/2020 with adjusted closing price insted of closing price to get the accurate picture of long term relation of stock price with time
-We are 3 layers of RNN neural network(LTSM architecture) with 1024 cells per layers with dropout so that we dont overfit on training data
-We use LTSM to capture long term dependencies which are not feasible using simple RNN cells
-
-![image](https://user-images.githubusercontent.com/56895070/121236747-e749b280-c8b3-11eb-88ea-6cef3d2ef5c9.png)
-
-
-we are also usnig a dense layer to output the value using sigmod function
-and we used 'adam' optimizer along with mean squre error
-
-![image](https://user-images.githubusercontent.com/56895070/121237228-71921680-c8b4-11eb-974a-f8844d2ce6ab.png)
 
 
