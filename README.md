@@ -1,7 +1,6 @@
 # Finance-ml
 
 
-Datasets taken from https://www.kaggle.com/mlg-ulb/creditcardfraud
 
 
 # Stock Market Prediction
